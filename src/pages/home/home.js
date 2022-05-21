@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import ChoosePlan from "../../components/card/ChoosePlan/ChoosePlan";
+
 import "./home.scss";
 
 import { sizeScreen } from '../../utils/utils.js';
@@ -42,7 +44,7 @@ const Home = () => {
       <section className="information-data">
         <div className="utils card-info flex flex-col justify-center w-full">
           <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center utils line-1">
               <div className="utils circle-1">
                 <img src="/assets/icons/user.svg" alt="user" />
               </div>
@@ -55,7 +57,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center utils line-1">
               <div className="utils circle-1">
                 <img src="/assets/icons/location.svg" alt="location" />
               </div>
@@ -83,6 +85,53 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="feature-info">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+          <div className="flex items-center justify-center">
+            <div>
+              <img src="/assets/imgs/illustration-2.webp" alt="illustration 2" />
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <div>
+              <h3 className="utils fz-35 line-height-50 color-black-800 fw-500 mb-5">We Provide Many <br /> Features You Can Use</h3>
+              <p className="utils fz-16 line-height-30 color-gray-700 mb-6">You can explore the features that we provide with fun and <br /> have their own functions each feature.</p>
+              <div className="utils fz-14 line-height-30 color-gray-700 flex items-center">
+                <img src="/assets/icons/checklist-circle-green.svg" alt="checklist" className="mr-3" /> Powerfull online protection.
+              </div>
+              <div className="utils fz-14 line-height-30 color-gray-700 flex items-center">
+                <img src="/assets/icons/checklist-circle-green.svg" alt="checklist" className="mr-3" /> Internet without borders.
+              </div>
+              <div className="utils fz-14 line-height-30 color-gray-700 flex items-center">
+                <img src="/assets/icons/checklist-circle-green.svg" alt="checklist" className="mr-3" /> Supercharged VPN
+              </div>
+              <div className="utils fz-14 line-height-30 color-gray-700 flex items-center">
+                <img src="/assets/icons/checklist-circle-green.svg" alt="checklist" className="mr-3" /> No specific time limits.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="choose-plan">
+        <div className="w-full">
+          <div className="text-center mb-14">
+            <h2 className="utils fz-35 line-height-35 color-black-800 fw-500 mb-5">Choose Your Plan</h2>
+            <p className="utils fz-16 line-height-30 color-gray-700">
+              Let's choose the package that is best for you and explore it happily and cheerfully.
+            </p>
+          </div>
+
+          <div className="flex justify-evenly">
+            <ChoosePlan type="free" price="Free" />
+            <ChoosePlan type="standart" price="9" />
+            <ChoosePlan type="premium" price="12" />
+          </div>
+        </div>
+
       </section>
     </div>
   );

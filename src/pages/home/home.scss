@@ -13,4 +13,18 @@
         justify-content: center;
         flex-direction: column;
     }
+
+    .feature-info {
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .choose-plan {
+        min-height: 1180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

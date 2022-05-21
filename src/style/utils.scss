@@ -5,6 +5,10 @@
         font-size: 50px;
     }
 
+    &.fz-35 {
+        font-size: 35px;
+    }
+
     &.fz-25 {
         font-size: 25px;
     }
@@ -13,8 +17,16 @@
         font-size: 20px;
     }
 
+    &.fz-18 {
+        font-size: 18px;
+    }
+
     &.fz-16 {
         font-size: 16px;
+    }
+
+    &.fz-14 {
+        font-size: 14px;
     }
 
     // font-weight style
@@ -29,6 +41,10 @@
     // line-height style
     &.line-height-70 {
         line-height: 70px;
+    }
+
+    &.line-height-50 {
+        line-height: 50px;
     }
 
     &.line-height-30 {
@@ -65,15 +81,43 @@
         background: #FFECEC;
     }
 
+    &.bg-gray-600 {
+        background: #F6F6F6;
+    }
+
     // button sty;e
     &.btn-1 {
         max-width: 250px;
-        height: 60px;
+        min-height: 60px;
         background: #F53838;
         border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        &:hover {
+            background: #e63550;
+        }
+    }
+
+    &.btn-2 {
+        // min-height: 45px;
+        // max-width: 178px;
+        padding: 13px 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #F53838;
+        border-radius: 50px;
+        color: #F53855;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+            border-color: #e63550;
+            color: #e63550;
+            background: #e8e8e8;
+        }
     }
 
     // circle style
@@ -85,6 +129,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    // line style
+    &.line-1 {
+        width: 2;
+        // height: 100%;
+        border-right: 2px solid #EEEFF2;
     }
 
     // card style
