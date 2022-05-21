@@ -1,0 +1,69 @@
+.utils {
+
+    // Text style
+    &.fz-50 {
+        font-size: 50px;
+    }
+
+    &.fz-20 {
+        font-size: 20px;
+    }
+
+    &.fz-16 {
+        font-size: 16px;
+    }
+
+    // font-weight style
+    &.fw-700 {
+        font-weight: 700;
+    }
+
+    &.fw-500 {
+        font-weight: 500;
+    }
+
+    // line-height style
+    &.line-height-70 {
+        line-height: 70px;
+    }
+
+    &.line-height-30 {
+        line-height: 30px;
+    }
+
+    &.line-height-25 {
+        line-height: 25px;
+    }
+
+    &.line-height-24 {
+        line-height: 24px;
+    }
+
+    &.line-height-19 {
+        line-height: 19px;
+    }
+
+    // color style
+    &.color-orange-800 {
+        color: #F53855;
+    }
+
+    &.color-black-800 {
+        color: #0B132A;
+    }
+
+    &.color-gray-700 {
+        color: #4F5665;
+    }
+
+    // background style
+    &.btn-1 {
+        max-width: 250px;
+        height: 60px;
+        background: #F53838;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
