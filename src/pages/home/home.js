@@ -23,7 +23,7 @@ const Home = () => {
         <span className="name utils color-orange-800 utils fz-16 line-height-19 fw-500">{screenWidth > 600 ? 'Fraza Aditya Wiguna' : `${'Fraza Aditya Wiguna'.substring(0, 5)}...`}</span>
       </div>
 
-      <header className="home top-header">
+      <header className="top-header">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex items-center">
             <div className="mt-10 md:mt-0 text-center md:text-left">
@@ -38,6 +38,52 @@ const Home = () => {
           </div>
         </div>
       </header>
+
+      <section className="information-data">
+        <div className="utils card-info flex flex-col justify-center w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="flex items-center justify-center">
+              <div className="utils circle-1">
+                <img src="/assets/icons/user.svg" alt="user" />
+              </div>
+              <div className="ml-9">
+                <h3 className="utils fz-25 line-height-30 fw-700">
+                  90+
+                </h3>
+                <p className="utils fz-20 line-height-30 color-gray-700">
+                  Users
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="utils circle-1">
+                <img src="/assets/icons/location.svg" alt="location" />
+              </div>
+              <div className="ml-9">
+                <h3 className="utils fz-25 line-height-30 fw-700">
+                  30+
+                </h3>
+                <p className="utils fz-20 line-height-30 color-gray-700">
+                  Locations
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="utils circle-1">
+                <img src="/assets/icons/database.svg" alt="database" />
+              </div>
+              <div className="ml-9">
+                <h3 className="utils fz-25 line-height-30 fw-700">
+                  50+
+                </h3>
+                <p className="utils fz-20 line-height-30 color-gray-700">
+                  Servers
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

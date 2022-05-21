@@ -5,6 +5,10 @@
         font-size: 50px;
     }
 
+    &.fz-25 {
+        font-size: 25px;
+    }
+
     &.fz-20 {
         font-size: 20px;
     }
@@ -57,6 +61,11 @@
     }
 
     // background style
+    &.bg-gray-700 {
+        background: #FFECEC;
+    }
+
+    // button sty;e
     &.btn-1 {
         max-width: 250px;
         height: 60px;
@@ -65,5 +74,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    // circle style
+    &.circle-1 {
+        width: 55px;
+        height: 55px;
+        background: #FFECEC;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // card style
+    &.card-info {
+        min-height: 200px;
+        border-radius: 20px;
+        box-shadow: 1px 16px 67px -17px rgba(0, 0, 0, 0.22);
     }
 }

@@ -529,12 +529,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-9 {
+  margin-left: 2.25rem;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-screen-xl {
@@ -561,8 +573,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-center {
@@ -575,6 +595,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -634,6 +659,10 @@ body {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:text-left {

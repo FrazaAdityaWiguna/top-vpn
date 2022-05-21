@@ -5,4 +5,12 @@
         align-items: center;
         justify-content: center;
     }
+
+    .information-data {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
