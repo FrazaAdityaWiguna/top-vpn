@@ -1,5 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination, Navigation } from "swiper";
+
 import ChoosePlan from "../../components/card/ChoosePlan/ChoosePlan";
 
 import "./home.scss";
@@ -134,7 +144,149 @@ const Home = () => {
 
       </section>
 
-      <section>
+      <section className="partner">
+        <div>
+          <h2 className="text-center utils fz-35 line-height-50 fw-500 color-black-800 mb-5">Huge Global Network <br /> of Fast VPN</h2>
+          <p className="text-center utils fz-16 line-height-30 color-gray-700 mb-36">See LaslesVPN everywhere to make it easier for you when you move <br /> locations.</p>
+          <div>
+            <img src="/assets/imgs/Huge-Global.webp" alt="Maps Global" />
+          </div>
+          <div>
+            <div className="flex items-center justify-between">
+              <img src="/assets/imgs/netflix.webp" alt="netflix" />
+              <img src="/assets/imgs/reddit.webp" alt="reddit" />
+              <img src="/assets/imgs/amazon.webp" alt="amazon" />
+              <img src="/assets/imgs/discord.webp" alt="discord" />
+              <img src="/assets/imgs/sportify.webp" alt="sportify" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="trust-people">
+        <div className="testimony">
+          <div>
+            <div className="mb-14">
+              <h2 className="utils fz-35 line-height-35 color-black-800 fw-500 mb-5 text-center">Trusted by Thousands of <br /> Happy Customer</h2>
+              <p className="utils fz-16 line-height-30 color-gray-700 text-center mb-16">
+                These are the stories of our customers who have joined us with great <br /> pleasure when using this crazy feature.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={{
+            prevEl: '.custom.swiper-button-prev',
+            nextEl: '.custom.swiper-button-next'
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper-1">
+
+          <div className="container-arrow">
+            <div className="custom swiper-button-prev">
+              <img src="/assets/icons/arrow-left-orange.svg" alt="Arrow Left" />
+            </div>
+            <div className="custom swiper-button-next">
+              <img src="/assets/icons/arrow-right-orange.svg" alt="Arrow Right" />
+            </div>
+          </div>
+
+          <SwiperSlide>
+            <div className="utils card-testimony">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <img src="/assets/imgs/user-1.webp" alt="user-1" />
+                  <div className="ml-5">
+                    <h4 className="utils fz-18 line-height-19 color-black-800 fw-500">Viezh Robert</h4>
+                    <p className="utils fz-14 line-height-19 color-gray-700">Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div className='flex'>
+                  <span className="utils fz-16 line-height-19 color-gray-700 mr-2.5">4.5</span>
+                  <img src="/assets/icons/star.svg" alt="star" />
+                </div>
+              </div>
+
+              <div>
+                “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="utils card-testimony">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <img src="/assets/imgs/user-1.webp" alt="user-1" />
+                  <div className="ml-5">
+                    <h4 className="utils fz-18 line-height-19 color-black-800 fw-500">Viezh Robert</h4>
+                    <p className="utils fz-14 line-height-19 color-gray-700">Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div className='flex'>
+                  <span className="utils fz-16 line-height-19 color-gray-700 mr-2.5">4.5</span>
+                  <img src="/assets/icons/star.svg" alt="star" />
+                </div>
+              </div>
+
+              <div>
+                “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="utils card-testimony">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <img src="/assets/imgs/user-1.webp" alt="user-1" />
+                  <div className="ml-5">
+                    <h4 className="utils fz-18 line-height-19 color-black-800 fw-500">Viezh Robert</h4>
+                    <p className="utils fz-14 line-height-19 color-gray-700">Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div className='flex'>
+                  <span className="utils fz-16 line-height-19 color-gray-700 mr-2.5">4.5</span>
+                  <img src="/assets/icons/star.svg" alt="star" />
+                </div>
+              </div>
+
+              <div>
+                “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="utils card-testimony">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <img src="/assets/imgs/user-1.webp" alt="user-1" />
+                  <div className="ml-5">
+                    <h4 className="utils fz-18 line-height-19 color-black-800 fw-500">Viezh Robert</h4>
+                    <p className="utils fz-14 line-height-19 color-gray-700">Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div className='flex'>
+                  <span className="utils fz-16 line-height-19 color-gray-700 mr-2.5">4.5</span>
+                  <img src="/assets/icons/star.svg" alt="star" />
+                </div>
+              </div>
+
+              <div>
+                “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </section>
     </div>
   );
