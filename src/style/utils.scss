@@ -47,6 +47,10 @@
         line-height: 50px;
     }
 
+    &.line-height-45 {
+        line-height: 45px;
+    }
+
     &.line-height-30 {
         line-height: 30px;
     }
@@ -147,7 +151,7 @@
 
     &.card-testimony {
         max-width: 400px;
-        max-height: 230px;
+        min-height: 230px;
         border-radius: 10px;
         border: 2px solid #DDDDDD;
         cursor: pointer;

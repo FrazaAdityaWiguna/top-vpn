@@ -65,7 +65,7 @@ const ChoosePlan = ({ type, price }) => {
     }
 
     return (
-        <div className="card-plan w-full">
+        <div className="card-plan w-full my-5 md:my-0 mx-auto md:mx-5">
             <div>
                 <img src="/assets/imgs/free.webp" alt="free" className="mx-auto" />
                 <h3 className="text-center utils fz-18 line-height-30 fw-500 color-black-800 my-7">Free Plan</h3>
