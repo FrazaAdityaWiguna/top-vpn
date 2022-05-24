@@ -40,7 +40,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex items-center">
               <div className="mt-10 md:mt-0 text-center md:text-left">
-                <h1 className="utils fz-50 line-height-70 color-black-800">Want anything to be easy with <span className="utils fw-500">TopVPN</span>.</h1>
+                <h1 className="utils fz-50 line-height-70 fz-sm-25 line-height-sm-40 color-black-800">Want anything to be easy with <span className="utils fw-500">TopVPN</span>.</h1>
                 <p className="utils fz-16 line-height-30 color-gray-700 mt-5">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
                 <Link to="#" className="utils btn-1 fz-16 fw-700 text-white mt-12 mx-auto md:mx-0">Get Started</Link>
               </div>
@@ -108,7 +108,7 @@ const Home = () => {
 
             <div className="flex items-center justify-center">
               <div>
-                <h3 className="utils fz-35 line-height-50 color-black-800 fw-500 mb-5">We Provide Many <br /> Features You Can Use</h3>
+                <h3 className="utils fz-35 line-height-50 color-black-800 fw-500 mb-5 fz-sm-25 line-height-sm-40">We Provide Many <br /> Features You Can Use</h3>
                 <p className="utils fz-16 line-height-30 color-gray-700 mb-6">You can explore the features that we provide with fun and <br /> have their own functions each feature.</p>
                 <div className="utils fz-14 line-height-30 color-gray-700 flex items-center justify-center md:justify-start">
                   <img src="/assets/icons/checklist-circle-green.svg" alt="checklist" className="mr-3" /> Powerfull online protection.
@@ -130,7 +130,7 @@ const Home = () => {
         <section className="choose-plan my-5 md:my-0">
           <div className="w-full">
             <div className="text-center mb-14">
-              <h2 className="utils fz-35 line-height-35 color-black-800 fw-500 mb-5">Choose Your Plan</h2>
+              <h2 className="utils fz-35 line-height-35 color-black-800 fw-500 mb-5 fz-sm-25 line-height-sm-40">Choose Your Plan</h2>
               <p className="utils fz-16 line-height-30 color-gray-700">
                 Let's choose the package that is best for you and explore it happily and cheerfully.
               </p>
@@ -147,7 +147,7 @@ const Home = () => {
 
         <section className="partner">
           <div>
-            <h2 className="text-center utils fz-35 line-height-50 fw-500 color-black-800 mb-5">Huge Global Network <br /> of Fast VPN</h2>
+            <h2 className="text-center utils fz-35 line-height-50 fw-500 color-black-800 mb-5 fz-sm-25 line-height-sm-40">Huge Global Network <br /> of Fast VPN</h2>
             <p className="text-center utils fz-16 line-height-30 color-gray-700 mb-36">See LaslesVPN everywhere to make it easier for you when you move <br /> locations.</p>
             <div>
               <img src="/assets/imgs/Huge-Global.webp" alt="Maps Global" />
@@ -168,7 +168,7 @@ const Home = () => {
           <div className="testimony">
             <div>
               <div className="mb-14">
-                <h2 className="utils fz-35 line-height-35 color-black-800 fw-500 mb-5 text-center">Trusted by Thousands of <br /> Happy Customer</h2>
+                <h2 className="utils fz-35 line-height-35 color-black-800 fw-500 mb-5 text-center fz-sm-25 line-height-sm-40">Trusted by Thousands of <br /> Happy Customer</h2>
                 <p className="utils fz-16 line-height-30 color-gray-700 text-center mb-16">
                   These are the stories of our customers who have joined us with great <br /> pleasure when using this crazy feature.
                 </p>
@@ -293,7 +293,7 @@ const Home = () => {
         <section className="subscribe-vpn mt-16">
           <div className="utils card-info flex flex-col md:flex-row text-center md:text-left justify-between items-center px-14 py-16">
             <div>
-              <h3 className="utils fz-35 line-height-45 fw-500 color-black-800 mb-5">Subscribe Now for <br /> Get Special Features!</h3>
+              <h3 className="utils fz-35 line-height-45 fw-500 color-black-800 mb-5 fz-sm-25 line-height-sm-40">Subscribe Now for <br /> Get Special Features!</h3>
               <p className="utils fz-16 line-height-30 color-gray-700">Let's subscribe with us and find the fun.</p>
             </div>
 

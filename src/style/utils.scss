@@ -163,3 +163,27 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .utils {
+
+        // Font style mobile
+        &.fz-sm-25 {
+            font-size: 25px;
+        }
+
+        // line heihgt style 
+        &.line-height-sm-40 {
+            line-height: 40px;
+        }
+
+        &.line-height-sm-30 {
+            line-height: 30px;
+        }
+
+        // Button style mobile
+        &.btn-2 {
+            padding: 13px 30px;
+        }
+    }
+}
